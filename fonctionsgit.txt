@@ -1,11 +1,13 @@
 les différentes fonctions git
+référence YOUBUBE
+https://www.youtube.com/watch?v=hPfgekYUKgk 
 
 connaitre la version utilisée par GIT
 git --version
 
 paramétrer initialement l'identité et l'email de l'utilisateur
 git config --global user.name "lehobbit"
-git config --global user.email "lehobbit@yahoo.fr"
+git config --global user.email "lehobbit@pourquoipas.fr"
 
 Création d'un répertoire de travail pour le projet
 mkdir exemple
@@ -27,3 +29,32 @@ git commit -m "je place entre les guillemets un petit commentaire de la modifica
 
 Historique des modifications des fichiers dans GIT
 git log
+
+Création d'une branche GIT
+git branch nomdelabranche
+
+voir les branches
+git branch
+
+changer de branches
+git checkout nomdelabranche
+
+rapatrier le fichier sur le master
+git checkout master
+puis fusionner le document de la branche avec celle présente sur le master avec
+git merge nomdelabranche
+facultativement on peut supprimer la branche avec
+git branch -d nomdelabranche
+
+ajouter le dossier à github
+s'inscrire sur github, créer un dossier repository et copier en local dans le terminal le lien de type :
+git remote add origin https://github.com/lehob/Infoconnaissance.git
+
+vérifier si le pont existe entre git local et github en faisant
+git remote (il doit afficher dans ce cas "origin")
+
+déposer le projet local sur github
+git push origin master
+
+si on veut rapatrier le fichier sur le dépot local
+git pull origin master
