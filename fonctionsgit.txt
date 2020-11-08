@@ -1,0 +1,29 @@
+les différentes fonctions git
+
+connaitre la version utilisée par GIT
+git --version
+
+paramétrer initialement l'identité et l'email de l'utilisateur
+git config --global user.name "lehobbit"
+git config --global user.email "lehobbit@yahoo.fr"
+
+Création d'un répertoire de travail pour le projet
+mkdir exemple
+
+Rentrer dans le répertoire
+cd exemple  
+
+Initialiser GIT dans le projet
+git init
+
+Etat des lieux voir à tout moment le statut du projet
+git status
+
+Création d'un premier fichier (exempl : premier.html) dans le répertoire de travail
+
+Prendre une "photo" du fichier
+git add fileName donc git add premier.html
+git commit -m "je place entre les guillemets un petit commentaire de la modification du fichier"
+
+Historique des modifications des fichiers dans GIT
+git log
