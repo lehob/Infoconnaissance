@@ -1,11 +1,11 @@
-les différentes fonctions git
+# les différentes fonctions git
 référence YOUBUBE
 https://www.youtube.com/watch?v=hPfgekYUKgk 
 
-connaitre la version utilisée par GIT
+## connaitre la version utilisée par GIT
 git --version
 
-paramétrer initialement l'identité et l'email de l'utilisateur
+## paramétrer initialement l'identité et l'email de l'utilisateur
 git config --global user.name "lehobbit"
 git config --global user.email "lehobbit@pourquoipas.fr"
 
@@ -29,6 +29,7 @@ git commit -m "je place entre les guillemets un petit commentaire de la modifica
 
 Historique des modifications des fichiers dans GIT
 git log
+(taper q pour sortir dans le terminal)
 
 Création d'une branche GIT
 git branch nomdelabranche
